@@ -11,6 +11,6 @@ class PostAdmin(admin.ModelAdmin):
     # добавляем возможность фильтрации по дате
     list_filter = ("pub_date",)
     list_editable = ("group",)
-    empty_value_display = "-пусто"# это свойство сработает для всех колонок: где пусто - там будет эта строка
+    empty_value_display = "-пусто-"# это свойство сработает для всех колонок: где пусто - там будет эта строка
 # при регистрации модели Post источником конфигурации для неё назначаем класс PostAdmin
 admin.site.register(Post, PostAdmin)
